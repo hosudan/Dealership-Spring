@@ -1,0 +1,23 @@
+allprojects {
+    apply plugin: 'java'
+
+    group 'org.example'
+    version '1.0-SNAPSHOT'
+
+    repositories {
+        mavenCentral()
+    }
+
+    ext{
+        springVersion = '5.2.13.RELEASE'
+        dbcpVersion ='2.8.0'
+    }
+
+    dependencies {
+        testCompile group: 'junit', name: 'junit', version: '4.12'
+        compile group: 'org.springframework', name: 'spring-context', version: springVersion
+        compile group: 'org.springframework', name: 'spring-jdbc', version: springVersion
+        compile group: 'org.apache.commons', name: 'commons-dbcp2', version: dbcpVersion
+    }
+
+}

@@ -1,0 +1,4 @@
+dependencies {
+    compile project (':common')
+    implementation 'org.postgresql:postgresql:42.2.19'
+}
