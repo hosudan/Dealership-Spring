@@ -1,9 +1,12 @@
-# Lab 5: Networking
-- continue to work in teams
-- convert your project to a client-server application using sockets
-- **simulate an RPC server** (messages sent between the client and the server must be handled in a unitary manner (simulate RPC calls) )
-- the server must be concurrent; use Java 8 language features; threads with ExecutorService
-- on the client side, service calls must be **non-blocking**
-- using external libraries for RPC is not allowed; only sockets
-- only the db (jdbc) persistence is needed
-- SOLID principles and other best practices discussed in the context of the previous project should also be applied here
+# Lab 10:
+-implement all crud operations, including operations on the relations, i.e., that involve aggregating data from several related entities
+-use a client-server architecture with sockets
+-simulate an RPC server (messages sent between the client and the server must be handled in a unitary manner (simulate RPC calls) ) 
+-the server must be concurrent
+-use Java 8 language features; threads with ExecutorService
+-only DB persistence is needed
+-for the DB persistence, use JdbcTemplate (Spring)
+-use Gradle for dependency management 
+-XML configuration for Spring is not allowed; annotations and Java Config classes only 
+-there should be three modules: client, server, common; the client and server modules depend on the common module; the module dependencies should be implemented in gradle
+-a layered architecture should be used (ui, service, repository)
